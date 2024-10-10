@@ -1,0 +1,26 @@
+*
+{
+    font-family: 'Inter Tight';
+}
+@font-face {
+    font-family: 'Geist';
+    src: url('Geist[wght].ttf');
+}
+/* styles.css */
+
+/* Custom styles (optional if needed) */
+
+/* Example: Custom responsive design for mobile and desktop */
+@media (max-width: 768px) {
+    /* Mobile-specific styles */
+    #image-container {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 769px) {
+    /* Desktop-specific styles */
+    #image-container {
+        width: 50% !important;
+    }
+}

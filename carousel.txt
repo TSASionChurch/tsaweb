@@ -1,0 +1,35 @@
+  <div class=" mt-20 relative w-full">
+            <div id="carousel" class="carousel flex">
+                <div class="carousel-slide flex items-center justify-center bg-gradient-to-r from-red-400 to-red-500">
+                    <h1 class="text-4xl font-semibold">fd</h1>
+                </div>
+                
+                <div class="carousel-slide flex items-center justify-center bg-gray-200">
+                              </div>
+                <div class="carousel-slide flex items-center justify-center bg-gray-200">
+                       </div>
+            </div>
+            <button id="prev" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white p-2 rounded-full shadow">❮</button>
+            <button id="next" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white p-2 rounded-full shadow">❯</button>
+        </div>
+
+
+              $(document).ready(function() {
+            let index = 0;
+            const totalSlides = $('#carousel > div').length;
+
+            $('#next').click(function() {
+                index = (index + 1) % totalSlides;
+                updateCarousel();
+            });
+
+            $('#prev').click(function() {
+                index = (index - 1 + totalSlides) % totalSlides;
+                updateCarousel();
+            });
+
+            function updateCarousel() {
+                const offset = -index * 100;
+                $('#carousel').css('transform', `translateX(${offset}%)`);
+            }
+        });
