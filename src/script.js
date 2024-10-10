@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     };
-const p="Cc";
+
     // Create an Intersection Observer
     const observer = new IntersectionObserver(observerCallback, {
         root: null,
@@ -48,16 +48,12 @@ const p="Cc";
     // Array of text content
     const textContent = [
         {
-            title: "Experience the Spirit of the Salvation Army Church",
-            description: "Be a part of our mission to uplift lives, bring comfort, and share hope. We're here to support and welcome those who seek help and community.",
-            textcolor: "text-amber-900",
-            bgcolor: "bg-amber-200"
+            title: "Welcome to our church",
+            description: "Be a part of our mission to uplift lives."
         },
         {
-            title: "Join Our Mission",
-            description: "Together, we can make a difference in the lives of those who need it most. Help us help others.",
-            textcolor: "text-sky-900",
-            bgcolor: "bg-sky-200"
+            title: "Holiness Convention 2024",
+            description: "Together, we can make a difference ."
         }
     ];
 
@@ -68,7 +64,6 @@ const p="Cc";
         const imageElement = document.getElementById('image1');
         const titleElement = document.getElementById('main-title');
         const textElement = document.getElementById('main-text');
-        const bgElement = document.getElementById('main-section');
 
         // Slide out the old image to the left
         anime({
@@ -104,16 +99,6 @@ const p="Cc";
                 // Change the text content
                 titleElement.textContent = textContent[currentIndex].title;
                 textElement.textContent = textContent[currentIndex].description;
-
-                // Change background color
-                bgElement.classList.remove('bg-amber-200', 'bg-sky-200'); // Remove previous classes
-                bgElement.classList.add(textContent[currentIndex].bgcolor); // Add new background color class
-
-                // Change text color
-                titleElement.classList.remove('text-amber-900', 'text-sky-900'); // Remove previous text color
-                textElement.classList.remove('text-amber-900', 'text-sky-900'); // Remove previous text color
-                titleElement.classList.add(textContent[currentIndex].textcolor); // Add new text color class
-                textElement.classList.add(textContent[currentIndex].textcolor); // Add new text color class
 
                 // Animate the new text in (fade and slide in from below)
                 anime({
