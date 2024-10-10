@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         rootMargin: '0px 0px -50px 0px', // Trigger animation when the element is near the viewport
         threshold: 0.4 // Element must be 10% in view to trigger
     });
+    const d="e";
 
     // Observe each card
     serviceCards.forEach(card => {
