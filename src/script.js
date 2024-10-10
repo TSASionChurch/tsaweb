@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     };
-
+const p="Cc";
     // Create an Intersection Observer
     const observer = new IntersectionObserver(observerCallback, {
         root: null,
