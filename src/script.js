@@ -122,3 +122,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initial content update on page load
     updateContent();
 });
+
+
+
+// TIMELINE
+
+
