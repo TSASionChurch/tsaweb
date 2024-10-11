@@ -4,21 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="styles.css">
     <title>Salvation Army Church</title>
     <script src="script.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="./output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 
 <body class="bg-white min-h-screen">
@@ -26,7 +23,7 @@
         <div class="flex items-center justify-between">
             <div class="flex items-center">
                 <img src="crest.png" class="w-8 mr-2">
-                <span class=" text-xl md:text-2xl cinz">Salvation Army Church Tamil Sion</span>
+                <span class="text-xl md:text-2xl font-medium">Salvation Army Church Tamil Sion</span>
             </div>
             <div class="md:hidden">
                 <button id="mobile-menu-button" class="text-gray-800 hover:text-red-600">
@@ -39,25 +36,22 @@
             <nav class="hidden md:flex md:items-center md:w-auto space-x-6">
                 <a class="text-gray-800 hover:text-red-600 text-sm md:text-base" href="index.html">Home</a>
                 <a class="text-gray-800 hover:text-red-600 text-sm md:text-base" href="history.html">About Us</a>
-                <a class="text-gray-800 hover:text-red-600 text-sm md:text-base" href="story.html">Pages</a>
-                <a class="text-gray-800 hover:text-red-600 text-sm md:text-base" href="#">Ministries</a>
-                <a class="text-gray-800 hover:text-red-600 text-sm md:text-base" href="#">Blog</a>
-                <a class="text-gray-800 hover:text-red-600 text-sm md:text-base" href="#">Contact Us</a>
+                <a class="text-gray-800 hover:text-red-600 text-sm md:text-base" href="ministries.html">Ministries</a>
+                <a class="text-gray-800 hover:text-red-600 text-sm md:text-base" href="blog.html">Blog</a>
+                <a class="text-gray-800 hover:text-red-600 text-sm md:text-base" href="contact.html">Contact Us</a>
             </nav>
-            <button class="hidden md:block bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition-colors">
-                Donate Now
-            </button>
+
+            <a class="hidden md:block bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition-colors" href="donate.html">Donate Us</a>
         </div>
 
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="mobile-menu md:hidden hidden">
             <nav class="flex flex-col space-y-4 mt-4">
-                <a class="text-gray-800 hover:text-red-600 text-lg" href="#">Home</a>
-                <a class="text-gray-800 hover:text-red-600 text-lg" href="#">About Us</a>
-                <a class="text-gray-800 hover:text-red-600 text-lg" href="#">Pages</a>
-                <a class="text-gray-800 hover:text-red-600 text-lg" href="#">Ministries</a>
-                <a class="text-gray-800 hover:text-red-600 text-lg" href="#">Blog</a>
-                <a class="text-gray-800 hover:text-red-600 text-lg" href="#">Contact Us</a>
+                <a class="text-gray-800 hover:text-red-600 text-lg" href="index.html">Home</a>
+                <a class="text-gray-800 hover:text-red-600 text-lg" href="history.html">About Us</a>
+                <a class="text-gray-800 hover:text-red-600 text-lg" href="ministries.html">Ministries</a>
+                <a class="text-gray-800 hover:text-red-600 text-lg" href="blog.html">Blog</a>
+                <a class="text-gray-800 hover:text-red-600 text-lg" href="contact.html">Contact Us</a>
                 <button class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition-colors w-full">
                     Donate Now
                 </button>
@@ -66,159 +60,173 @@
     </header>
 
     <!-- Main Section with Responsive Flexbox Layout -->
-<main id="main-section" class="container mx-auto px-4 py-12 lg:py-24 flex flex-col md:flex-row items-center bg-red-100">
-    <div class="md:w-1/2 mb-8 md:mb-0">
-        <h1 id="main-title" class="cinz text-red-950 text-4xl sm:text-3xl md:text-4xl lg:text-7xl font-semibold mb-4 ml-4">Welcome to our church</h1>
-        <p id="main-text" class="text-gray-600 mb-6 ml-4 text-base sm:text-lg md:text-xl lg:text-2xl">
-            Be a part of our mission to uplift lives.
-        </p>
-        <button class="bg-red-600 text-white ml-4 px-6 py-3 rounded-md hover:bg-red-700 transition-colors flex items-center text-sm sm:text-base md:text-lg">
-            Learn More
-            <svg class="ml-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5-5 5M6 12h12" />
-            </svg>
-        </button>
-    </div>
+    <main id="main-section" class="container mx-auto px-4 py-12 lg:py-24 flex flex-col md:flex-row items-center bg-red-100">
+        <div class="md:w-1/2 mb-8 md:mb-0">
+            <h1 id="main-title" class="cinz text-red-950 text-4xl sm:text-3xl md:text-4xl lg:text-7xl font-semibold mb-4 ml-4">Welcome to our church</h1>
+            <p id="main-text" class="text-gray-600 mb-6 ml-4 text-base sm:text-lg md:text-xl lg:text-2xl">
+                Be a part of our mission to uplift lives.
+            </p>
+            <button class="bg-red-600 text-white ml-4 px-6 py-3 rounded-md hover:bg-red-700 transition-colors flex items-center text-sm sm:text-base md:text-lg">
+                Learn More
+                <svg class="ml-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5-5 5M6 12h12" />
+                </svg>
+            </button>
+        </div>
 
-    <!-- Responsive Image Section with Dynamic Heights -->
-    <div id="image-container" class="md:w-1/2 relative lg:mr-8">
-        <div class="w-full h-48 sm:h-64 md:h-96 bg-red-600 transform -skew-x-12 overflow-hidden">
-            <div class="w-full h-full transform skew-x-12 relative">
-                <img id="image1" alt="Church interior" class="object-cover w-full h-full transform origin-top-left scale-100 md:scale-125" src="DSC_0001.webp">
+        <!-- Responsive Image Section with Dynamic Heights -->
+        <div id="image-container" class="md:w-1/2 relative lg:mr-8">
+            <div class="w-full h-48 sm:h-64 md:h-96 bg-red-600 transform -skew-x-12 overflow-hidden">
+                <div class="w-full h-full transform skew-x-12 relative">
+                    <img id="image1" alt="Church interior" class="object-cover w-full h-full transform origin-top-left scale-100 md:scale-125" src="DSC_0001.webp">
+                </div>
             </div>
         </div>
-    </div>
-</main>
+    </main>
 
-</div>
- <!-- Service Timings Section -->
-<!-- Service Timings Section -->
-<!-- Service Timings Section -->
-<section id="service-timings" class="py-12 lg:py-24 bg-white">
-    <div class="container mx-auto px-4">
-        <h2 class="text-3xl lg:text-6xl font-semibold text-center text-slate-800 mb-8 cinz">Service Timings</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <!-- Service Card 1 -->
-            <div class="service-card bg-white shadow-xl hover:shadow-2xl rounded-lg border border-gray-300 p-6 text-center transition-transform transform hover:scale-105">
-                <div class="flex justify-center items-center  bg-red-200 text-red-600 rounded-full w-16 h-16 mx-auto mb-4">
-                    <i class="fas fa-church text-3xl"></i>
+    <!-- Service Timings Section -->
+    <section id="service-timings" class="py-12 lg:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl lg:text-6xl font-semibold text-center text-slate-800 mb-8 cinz">Service Timings</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service Card 1 -->
+                <div class="service-card animate-card bg-white shadow-xl hover:shadow-2xl rounded-lg border border-gray-300 p-6 text-center transition-transform transform hover:scale-105">
+                    <div class="flex justify-center items-center bg-red-200 text-red-600 rounded-full w-16 h-16 mx-auto mb-4">
+                        <i class="fas fa-church text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-red-600 mb-4">Sunday Worship</h3>
+                    <p class="text-gray-600 mb-4">10:00 AM - 12:00 PM</p>
+                    <p class="text-gray-500">Join us for a time of worship and fellowship as we celebrate God's love together.</p>
                 </div>
-                <h3 class="text-2xl font-semibold text-red-600 mb-4">Sunday Worship</h3>
-                <p class="text-gray-600 mb-4">10:00 AM - 12:00 PM</p>
-                <p class="text-gray-500">Join us for a time of worship and fellowship as we celebrate God's love together.</p>
-            </div>
 
-            <!-- Service Card 2 -->
-            <div class="service-card bg-white shadow-xl hover:shadow-2xl rounded-lg border border-gray-300 p-6 text-center transition-transform transform hover:scale-105">
-                <div class="flex justify-center items-center bg-red-200 text-red-600 rounded-full w-16 h-16 mx-auto mb-4">
-                    <i class="fas fa-praying-hands text-3xl"></i>
+                <!-- Service Card 2 -->
+                <div class="service-card animate-card bg-white shadow-xl hover:shadow-2xl rounded-lg border border-gray-300 p-6 text-center transition-transform transform hover:scale-105">
+                    <div class="flex justify-center items-center bg-red-200 text-red-600 rounded-full w-16 h-16 mx-auto mb-4">
+                        <i class="fas fa-praying-hands text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-red-600 mb-4">Friday Women's Fasting Prayer</h3>
+                    <p class="text-gray-600 mb-4">6:00 PM - 7:30 PM</p>
+                    <p class="text-gray-500">A midweek gathering for in-depth Bible study and spiritual growth.</p>
                 </div>
-                <h3 class="text-2xl font-semibold text-red-600 mb-4">Friday Women's Fasting Prayer</h3>
-                <p class="text-gray-600 mb-4">6:00 PM - 7:30 PM</p>
-                <p class="text-gray-500">A midweek gathering for in-depth Bible study and spiritual growth.</p>
-            </div>
 
-            <!-- Service Card 3 -->
-            <div class="service-card bg-white shadow-xl hover:shadow-2xl rounded-lg border border-gray-300 p-6 text-center transition-transform transform hover:scale-105">
-                <div class="flex justify-center items-center  bg-red-200 text-red-600 rounded-full w-16 h-16 mx-auto mb-4">
-                    <i class="fas fa-users text-3xl"></i>
+                <!-- Service Card 3 -->
+                <div class="service-card animate-card bg-white shadow-xl hover:shadow-2xl rounded-lg border border-gray-300 p-6 text-center transition-transform transform hover:scale-105">
+                    <div class="flex justify-center items-center bg-red-200 text-red-600 rounded-full w-16 h-16 mx-auto mb-4">
+                        <i class="fas fa-users text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-red-600 mb-4">Youth Fellowship</h3>
+                    <p class="text-gray-600 mb-4">Every Saturday - 4:00 PM</p>
+                    <p class="text-gray-500">A gathering for the youth to connect, learn, and grow in their faith.</p>
                 </div>
-                <h3 class="text-2xl font-semibold text-red-600 mb-4">Youth Prayer</h3>
-                <p class="text-gray-600 mb-4">6:00 PM - 7:30 PM</p>
-                <p class="text-gray-500">A midweek gathering for in-depth Bible study and spiritual growth.</p>
-            </div>
 
-            <!-- Service Card 4 -->
-            <div class="service-card bg-white shadow-xl hover:shadow-2xl rounded-lg border border-gray-300 p-6 text-center transition-transform transform hover:scale-105">
-                <div class="flex justify-center items-center bg-red-200 text-red-600 rounded-full w-16 h-16 mx-auto mb-4">
-                    <i class="fas fa-moon text-3xl"></i>
+                <!-- Service Card 4 -->
+                <div class="service-card animate-card bg-white shadow-xl hover:shadow-2xl rounded-lg border border-gray-300 p-6 text-center transition-transform transform hover:scale-105">
+                    <div class="flex justify-center items-center bg-red-200 text-red-600 rounded-full w-16 h-16 mx-auto mb-4">
+                        <i class="fas fa-bible text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-red-600 mb-4">Bible Study</h3>
+                    <p class="text-gray-600 mb-4">Wednesdays - 7:00 PM</p>
+                    <p class="text-gray-500">Join us for an insightful time of digging deep into God’s word.</p>
                 </div>
-                <h3 class="text-2xl font-semibold text-red-600 mb-4">Half Night Prayer</h3>
-                <p class="text-gray-600 mb-4">6:00 PM - 7:30 PM</p>
-                <p class="text-gray-500">A midweek gathering for in-depth Bible study and spiritual growth.</p>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- YouTube Videos Section -->
 <section class="py-8 bg-gray-100">
     <div class="container mx-auto px-4">
+        <h2 class="text-3xl lg:text-6xl font-semibold text-center text-gray-800 mb-8 cinz">Watch Our Services</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-            <!-- Address Section -->
-            <div class="flex flex-col justify-center bg-white p-6 rounded-lg ">
-                <h2 class="text-3xl lg:text-6xl font-semibold text-gray-800 mb-4 cinz">Our Address</h2>
-                <p class="text-gray-600">
-                    Plot No. 6, First Floor, 60 Feet Road, Sion East, opposite Manav Seva Sangh,
-                    Mumbai, Maharashtra 400022
-                </p>
-                <a href="https://goo.gl/maps/8F6sjm4yZ78a2V2f9" target="_blank" class="mt-4 text-blue-600 hover:underline">View on Google Maps</a>
+            <div class="video-container">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2 text-center">Sunday Worship Service</h3>
+                <iframe class="w-full lg:h-96 h-72" src="https://www.youtube.com/embed/IRuaizLfooc?si=O9W1fbqnCI20RCLQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-
-            <!-- Map Section -->
-            <div class="relative w-full rounded-lg shadow-lg overflow-hidden">
-                <div class="relative w-full" style="padding-top: 56.25%;"> <!-- Aspect ratio 16:9 -->
-                    <iframe class="absolute top-0 left-0 w-full h-full"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30173.47732297911!2d72.8218741743164!3d19.033612000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c92a7019f37d%3A0xbf05632e51e35ef6!2sSalvation%20Army%20Tamil%20Church%2C%20Women%20And%20Children%20Home!5e0!3m2!1sen!2sin!4v1728552474695!5m2!1sen!2sin"
-                            style="border: 0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+            <div class="video-container">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2 text-center">Youth Meeting</h3>
+                <iframe class="w-full lg:h-96 h-72" src="https://www.youtube.com/embed/aNzT-lTzlGg?si=wkDGz6-gVD7sZtxR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-
         </div>
     </div>
 </section>
 
-<footer class="bg-red-200 text-red-950 py-12 mt-12">
-    <div class="container mx-auto px-4">
-        <div class="flex flex-col md:flex-row justify-between items-start">
-            <div class="w-full md:w-1/3 mb-6 md:mb-0">
-                <h2 class="text-lg font-bold mb-4">About Us</h2>
-                <p class="text-sm">
-                    The Salvation Army Church Tamil Sion is committed to serving our community through faith, worship, and outreach programs. Join us in our mission to uplift lives and spread love.
-                </p>
-            </div>
 
-            <div class="w-full md:w-1/3 mb-6 md:mb-0">
-                <h2 class="text-lg font-bold mb-4">Quick Links</h2>
-                <ul class="space-y-2">
-                    <li><a href="#" class="hover:text-gray-200 text-sm">Home</a></li>
-                    <li><a href="#" class="hover:text-gray-200 text-sm">About Us</a></li>
-                    <li><a href="#" class="hover:text-gray-200 text-sm">Ministries</a></li>
-                    <li><a href="#" class="hover:text-gray-200 text-sm">Blog</a></li>
-                    <li><a href="#" class="hover:text-gray-200 text-sm">Contact Us</a></li>
-                </ul>
-            </div>
+    <!-- Address Section -->
+    <section class="py-8 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Address Section -->
+                <div class="flex flex-col justify-center bg-white p-6 rounded-lg">
+                    <h2 class="text-3xl lg:text-6xl font-semibold text-gray-800 mb-4 cinz">Our Address</h2>
+                    <p class="text-gray-600">
+                        Plot No. 6, First Floor, 60 Feet Road, Sion East, opposite Manav Seva Sangh,
+                        Mumbai, Maharashtra 400022
+                    </p>
+                    <a href="https://goo.gl/maps/8F6sjm4yZ78a2V2f9" target="_blank" class="mt-4 text-blue-600 hover:underline">View on Google Maps</a>
+                </div>
 
-            <div class="w-full md:w-1/3">
-                <h2 class="text-lg font-bold mb-4">Contact Us</h2>
-                <p class="text-sm mb-2">
-                    Plot No. 6, First Floor,<br>
-                    60 Feet Road, Sion East,<br>
-                    Mumbai, Maharashtra 400022
-                </p>
-                <p class="text-sm mb-2">Phone: (123) 456-7890</p>
-                <p class="text-sm mb-4">Email: <a href="mailto:info@salvationarmy.com" class="hover:text-gray-200">info@salvationarmy.com</a></p>
-                <div class="flex space-x-4">
-                    <a href="#" class="hover:text-gray-200"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="hover:text-gray-200"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="hover:text-gray-200"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="hover:text-gray-200"><i class="fab fa-youtube"></i></a>
+                <!-- Map Section -->
+                <div class="relative w-full rounded-lg shadow-lg overflow-hidden">
+                    <div class="relative w-full" style="padding-top: 56.25%;">
+                        <iframe class="absolute top-0 left-0 w-full h-full"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30173.47732297911!2d72.8218741743164!3d19.033612000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c92a7019f37d%3A0xbf05632e51e35ef6!2sSalvation%20Army%20Tamil%20Church%2C%20Women%20And%20Children%20Home!5e0!3m2!1sen!2sin!4v1728552474695!5m2!1sen!2sin"
+                                style="border: 0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="border-t border-gray-300 mt-8 pt-6 text-center">
-            <p class="text-sm">© 2024 Salvation Army Church Tamil Sion. All rights reserved.</p>
-            <ul class="flex justify-center space-x-4 mt-2">
-                <li><a href="#" class="hover:text-gray-200 text-sm">Privacy Policy</a></li>
-                <li><a href="#" class="hover:text-gray-200 text-sm">Terms of Service</a></li>
-            </ul>
+    <footer class="bg-red-200 text-red-950 py-12 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-start">
+                <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                    <h2 class="text-lg font-bold mb-4">About Us</h2>
+                    <p class="text-sm">
+                        The Salvation Army Church Tamil Sion is committed to serving our community through faith, worship, and outreach programs. Join us in our mission to uplift lives and spread love.
+                    </p>
+                </div>
+
+                <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                    <h2 class="text-lg font-bold mb-4">Quick Links</h2>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-gray-200 text-sm">Home</a></li>
+                        <li><a href="history.html" class="hover:text-gray-200 text-sm">About Us</a></li>
+                        <li><a href="ministries.html" class="hover:text-gray-200 text-sm">Ministries</a></li>
+                        <li><a href="blog.html" class="hover:text-gray-200 text-sm">Blog</a></li>
+                        <li><a href="contact.html" class="hover:text-gray-200 text-sm">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="w-full md:w-1/3">
+                    <h2 class="text-lg font-bold mb-4">Contact Us</h2>
+                    <p class="text-sm mb-2">
+                        Plot No. 6, First Floor,<br>
+                        60 Feet Road, Sion East,<br>
+                        Mumbai, Maharashtra 400022
+                    </p>
+                    <p class="text-sm mb-2">Phone: (123) 456-7890</p>
+                    <p class="text-sm mb-4">Email: <a href="mailto:info@salvationarmy.com" class="hover:text-gray-200">info@salvationarmy.com</a></p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/groups/say.youth/" class="hover:text-gray-200"><i class="fab fa-facebook-f"></i></a> 
+                        <a href="https://www.instagram.com/salvationarmysion/" class="hover:text-gray-200"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@SalvationArmyTamilCorpsSion" class="hover:text-gray-200"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-300 mt-8 pt-6 text-center">
+                <p class="text-sm">© 2024 Salvation Army Church Tamil Sion. All rights reserved.</p>
+                <ul class="flex justify-center space-x-4 mt-2">
+                    <li><a href="#" class="hover:text-gray-200 text-sm">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-gray-200 text-sm">Terms of Service</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-</footer>
-
+    </footer>
+    
 </body>
 
 </html>

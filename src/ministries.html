@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ministries - Salvation Army Church</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="bg-white min-h-screen">
+    <header class="container mx-auto px-4 py-6">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center">
+                <img src="crest.png" class="w-8 mr-2">
+                <span class="text-xl md:text-2xl font-medium">Salvation Army Church Tamil Sion</span>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-800 hover:text-red-600">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav class="hidden md:flex md:items-center md:w-auto space-x-6">
+                <a class="text-gray-800 hover:text-red-600 text-sm md:text-base" href="index.html">Home</a>
+                <a class="text-gray-800 hover:text-red-600 text-sm md:text-base" href="history.html">About Us</a>
+                <a class="text-gray-800 hover:text-red-600 text-sm md:text-base" href="ministries.html">Ministries</a>
+                <a class="text-gray-800 hover:text-red-600 text-sm md:text-base" href="blog.html">Blog</a>
+                <a class="text-gray-800 hover:text-red-600 text-sm md:text-base" href="contact.html">Contact Us</a>
+            </nav>
+
+            <a class="hidden md:block bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition-colors" href="donate.html">Donate Us</a>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu md:hidden hidden">
+            <nav class="flex flex-col space-y-4 mt-4">
+                <a class="text-gray-800 hover:text-red-600 text-lg" href="index.html">Home</a>
+                <a class="text-gray-800 hover:text-red-600 text-lg" href="history.html">About Us</a>
+                <a class="text-gray-800 hover:text-red-600 text-lg" href="ministries.html">Ministries</a>
+                <a class="text-gray-800 hover:text-red-600 text-lg" href="blog.html">Blog</a>
+                <a class="text-gray-800 hover:text-red-600 text-lg" href="contact.html">Contact Us</a>
+                <button class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition-colors w-full">
+                    Donate Now
+                </button>
+            </nav>
+        </div>
+    </header>
+    <h1 id="title" class="text-4xl font-semibold text-center mb-8 cinz lg:text-6xl mt-4">Our Ministries</h1>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4 md:p-6">
+        <div class="border border-gray-300 bg-white text-gray-800 overflow-hidden rounded-lg transition-transform duration-300 card">
+            <img src="/placeholder.svg" alt="Community Outreach" class="w-full h-48 object-cover" style="aspect-ratio: 400 / 200; object-fit: cover;" />
+            <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Community Outreach</h3>
+                <p class="mb-4">Join us as we serve the community through various outreach programs and initiatives.</p>
+                <a class="text-red-600 hover:underline" href="#">Learn More</a>
+            </div>
+        </div>
+        <div class="border border-gray-300 bg-white text-gray-800 overflow-hidden rounded-lg transition-transform duration-300 card">
+            <img src="/placeholder.svg" alt="Youth Ministries" class="w-full h-48 object-cover" style="aspect-ratio: 400 / 200; object-fit: cover;" />
+            <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Youth Ministries</h3>
+                <p class="mb-4">Empowering the youth to grow in faith and engage with their community through activities and workshops.</p>
+                <a class="text-red-600 hover:underline" href="#">Learn More</a>
+            </div>
+        </div>
+        <div class="border border-gray-300 bg-white text-gray-800 overflow-hidden rounded-lg transition-transform duration-300 card">
+            <img src="/placeholder.svg" alt="Worship Services" class="w-full h-48 object-cover" style="aspect-ratio: 400 / 200; object-fit: cover;" />
+            <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Worship Services</h3>
+                <p class="mb-4">Join us for uplifting worship services every Sunday, where we come together in faith.</p>
+                <a class="text-red-600 hover:underline" href="#">Learn More</a>
+            </div>
+        </div>
+        <div class="border border-gray-300 bg-white text-gray-800 overflow-hidden rounded-lg transition-transform duration-300 card">
+            <img src="/placeholder.svg" alt="Bible Study Groups" class="w-full h-48 object-cover" style="aspect-ratio: 400 / 200; object-fit: cover;" />
+            <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Bible Study Groups</h3>
+                <p class="mb-4">Deepen your understanding of the scriptures and grow in faith through our Bible study groups.</p>
+                <a class="text-red-600 hover:underline" href="#">Learn More</a>
+            </div>
+        </div>
+        <div class="border border-gray-300 bg-white text-gray-800 overflow-hidden rounded-lg transition-transform duration-300 card">
+            <img src="/placeholder.svg" alt="Support for Families" class="w-full h-48 object-cover" style="aspect-ratio: 400 / 200; object-fit: cover;" />
+            <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Support for Families</h3>
+                <p class="mb-4">Providing support and resources for families in need within our community.</p>
+                <a class="text-red-600 hover:underline" href="#">Learn More</a>
+            </div>
+        </div>
+        <div class="border border-gray-300 bg-white text-gray-800 overflow-hidden rounded-lg transition-transform duration-300 card">
+            <img src="/placeholder.svg" alt="Volunteering Opportunities" class="w-full h-48 object-cover" style="aspect-ratio: 400 / 200; object-fit: cover;" />
+            <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Volunteering Opportunities</h3>
+                <p class="mb-4">Get involved and make a difference through various volunteering opportunities.</p>
+                <a class="text-red-600 hover:underline" href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-red-200 text-red-950 py-12 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-start">
+                <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                    <h2 class="text-lg font-bold mb-4">About Us</h2>
+                    <p class="text-sm">
+                        The Salvation Army Church Tamil Sion is committed to serving our community through faith, worship, and outreach programs. Join us in our mission to uplift lives and spread love.
+                    </p>
+                </div>
+
+                <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                    <h2 class="text-lg font-bold mb-4">Quick Links</h2>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-gray-200 text-sm">Home</a></li>
+                        <li><a href="history.html" class="hover:text-gray-200 text-sm">About Us</a></li>
+                        <li><a href="ministries.html" class="hover:text-gray-200 text-sm">Ministries</a></li>
+                        <li><a href="blog.html" class="hover:text-gray-200 text-sm">Blog</a></li>
+                        <li><a href="contact.html" class="hover:text-gray-200 text-sm">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="w-full md:w-1/3">
+                    <h2 class="text-lg font-bold mb-4">Contact Us</h2>
+                    <p class="text-sm mb-2">
+                        Plot No. 6, First Floor,<br>
+                        60 Feet Road, Sion East,<br>
+                        Mumbai, Maharashtra 400022
+                    </p>
+                    <p class="text-sm mb-2">Phone: (123) 456-7890</p>
+                    <p class="text-sm mb-4">Email: <a href="mailto:info@salvationarmy.com" class="hover:text-gray-200">info@salvationarmy.com</a></p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/groups/say.youth/" class="hover:text-gray-200"><i class="fab fa-facebook-f"></i></a> 
+                        <a href="https://www.instagram.com/salvationarmysion/" class="hover:text-gray-200"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@SalvationArmyTamilCorpsSion" class="hover:text-gray-200"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-300 mt-8 pt-6 text-center">
+                <p class="text-sm">© 2024 Salvation Army Church Tamil Sion. All rights reserved.</p>
+                <ul class="flex justify-center space-x-4 mt-2">
+                    <li><a href="#" class="hover:text-gray-200 text-sm">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-gray-200 text-sm">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const title = document.getElementById('title');
+            anime({
+                targets: title,
+                opacity: [0, 1],
+                translateY: [20, 0],
+                duration: 800,
+                easing: 'easeOutExpo'
+            });
+
+            // Animate the cards
+            const cards = document.querySelectorAll('.card');
+            cards.forEach((card, index) => {
+                anime({
+                    targets: card,
+                    opacity: [0, 1],
+                    translateY: [20, 0],
+                    delay: anime.stagger(200, { start: index * 100 }), // stagger the animation
+                    duration: 800,
+                    easing: 'easeOutExpo'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

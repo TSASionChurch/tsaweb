@@ -6,39 +6,31 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileMenuButton.addEventListener('click', () => {
         mobileMenu.classList.toggle('hidden'); // Toggle the visibility of the mobile menu
     });
-
-    // Scroll Animation: Animate cards when they come into view
-    const serviceCards = document.querySelectorAll('.service-card');
-
-    // Scroll observer callback
-    const observerCallback = (entries, observer) => {
-        entries.forEach((entry, index) => {
+    function animateTimeline(entries) {
+    
+        entries.forEach(entry => {
             if (entry.isIntersecting) {
+                const service = document.getElementById('service-timings');
                 anime({
-                    targets: entry.target,
+                    targets: service,
                     opacity: [0, 1],
-                    translateY: [50, 0], // Move up slightly
+                    translateY: [20, 0],
                     duration: 800,
-                    easing: 'linear',
-                     // Stagger delay for each card (150ms per card)
+                    easing: 'easeOutExpo'
                 });
-                observer.unobserve(entry.target); // Stop observing after animation
+                hasAnimated = true; // Set flag to true after animation
             }
         });
-    };
+    }
+
+    // Scroll Animation: Animate cards when they come into view
+    
 
     // Create an Intersection Observer
-    const observer = new IntersectionObserver(observerCallback, {
-        root: null,
-        rootMargin: '0px 0px -50px 0px', // Trigger animation when the element is near the viewport
-        threshold: 0.4 // Element must be 10% in view to trigger
-    });
+  
 
-    // Observe each card
-    serviceCards.forEach(card => {
-        observer.observe(card);
-    });
-
+    // Event listener for load to animate visible items
+  
     // Array of images
     const images = [
         "DSC_0001.webp", // Image 1
