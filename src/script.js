@@ -34,7 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Array of images
     const images = [
         "DSC_0001.webp", // Image 1
-        "DSC_0002.webp", // Image 2
+        "DSC_0002.webp",
+        "DSC_0003.webp" // Image 2
     ];
 
     // Array of text content
@@ -45,6 +46,10 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             title: "Holiness Convention 2024",
+            description: "Together, we can make a difference ."
+        },
+        {
+            title: "Sunday School Children",
             description: "Together, we can make a difference ."
         }
     ];
