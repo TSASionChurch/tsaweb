@@ -42,11 +42,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const textContent = [
         {
             title: "Welcome to our church",
-            description: "Be a part of our mission to uplift lives."
+            description: "I was glad when they said to me,“Let us go into the house of the Lord.” Psalm 122:1 "
         },
         {
             title: "Holiness Convention 2024",
-            description: "Together, we can make a difference ."
+            description: "I was glad when they said to me,“Let us go into the house of the Lord.” Psalm 122:1 "
+       
         },
         {
             title: "Sunday School Children",

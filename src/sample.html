@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossfade Background Transition</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        body, html {
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-size: cover; /* Change from cover to contain */
+            background-position: center;
+            transition: opacity 1s ease;
+            opacity: 0;
+        }
+
+        .background.visible {
+            opacity: 1; /* Visible when the class is added */
+        }
+
+        #change-bg {
+            position: relative;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        #change-bg:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+    </style>
+    
+    <div class="container">
+        <div class="background" id="background1" style="background-image: url('image1.jpg');"></div>
+        <div class="background" id="background2" style="background-image: url('image2.jpg');"></div>
+    </div>
+    <button id="change-bg">Change Background</button>
+
+    <script>
+        const background1 = document.getElementById('background1');
+        const background2 = document.getElementById('background2');
+        const button = document.getElementById('change-bg');
+
+        let isImage1 = true;
+
+        // Start with the first background visible
+        background1.classList.add('visible');
+
+        button.addEventListener('click', () => {
+            if (isImage1) {
+                background1.classList.remove('visible');
+                background2.classList.add('visible');
+            } else {
+                background2.classList.remove('visible');
+                background1.classList.add('visible');
+            }
+
+            isImage1 = !isImage1;
+        });
+    </script>
+</body>
+</html>
