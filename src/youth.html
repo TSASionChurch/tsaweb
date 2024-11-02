@@ -16,15 +16,42 @@
     <header class="container mx-auto px-4 py-6">
         <div class="flex items-center justify-between">
             <div class="flex items-center">
-                <img src="crest.png" class="w-8 mr-2" alt="Salvation Army Crest">
-                <span class="text-xl md:text-2xl font-medium">Salvation Army Church Tamil Sion</span>
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/The_Salvation_Army.svg/212px-The_Salvation_Army.svg.png?20191217190242" class="w-16
+    mr-2">
+                <span><span class="text-3xl md:text-2xl cinz font-semibold">The Salvation Army</span><br><span class="cinz font-medium text-2xl text-red-500">Tamil Church Sion (IWT)</span>
+</span> 
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-800 hover:text-red-600">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
             </div>
             <nav class="hidden md:flex md:items-center md:w-auto space-x-6">
-                <a class="text-gray-800 hover:text-red-600 text-sm md:text-base" href="index.html">Home</a>
-                <a class="text-gray-800 hover:text-red-600 text-sm md:text-base" href="history.html">About Us</a>
-                <a class="text-gray-800 hover:text-red-600 text-sm md:text-base" href="ministries.html">Ministries</a>
-                <a class="text-gray-800 hover:text-red-600 text-sm md:text-base" href="blog.html">Blog</a>
-                <a class="text-gray-800 hover:text-red-600 text-sm md:text-base" href="contact.html">Contact Us</a>
+                <a class="text-gray-800 hover:text-red-600 text-sm md:text-base" href="/">Home</a>
+                <a class="text-gray-800 hover:text-red-600 text-sm md:text-base" href="/history">About Us</a>
+                <a class="text-gray-800 hover:text-red-600 text-sm md:text-base" href="/ministries">Ministries</a>
+                <a class="text-gray-800 hover:text-red-600 text-sm md:text-base" href="/blog">Blog</a>
+                <a class="text-gray-800 hover:text-red-600 text-sm md:text-base" href="/contact">Contact Us</a>
+            </nav>
+
+            <a class="hidden md:block bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition-colors" href="/donate">Donate Us</a>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu md:hidden hidden">
+            <nav class="flex flex-col space-y-4 mt-4">
+                <a class="text-gray-800 hover:text-red-600 text-lg" href="/">Home</a>
+                <a class="text-gray-800 hover:text-red-600 text-lg" href="/history">About Us</a>
+                <a class="text-gray-800 hover:text-red-600 text-lg" href="/ministries">Ministries</a>
+                <a class="text-gray-800 hover:text-red-600 text-lg" href="/blog">Blog</a>
+                <a class="text-gray-800 hover:text-red-600 text-lg" href="/contact">Contact Us</a>
+                <a class="text-gray-800 hover:text-red-600 text-lg" href="/sample">Sample</a>
+            
+                <button class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition-colors w-full">
+                    Donate Now
+                </button>
             </nav>
         </div>
     </header>
